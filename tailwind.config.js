@@ -2,7 +2,16 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'bg-hero': "url('../src/img/bg.jpg')",
+        'gradient-btn': 'linear-gradient (to right, #5e7849, #f1c166)',
+      },
+      colors: {
+        'theme-green' : '#5e7849',
+        'theme-yellow' : '#f1c166'
+      }
+    },
   },
   plugins: [],
 }
