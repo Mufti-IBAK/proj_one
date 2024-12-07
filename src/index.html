@@ -10,51 +10,127 @@
 
 <body>
     <!-- This is the header section -->
-    <header id="nav-bar" class="m-3 nav p-2 bg-cover bg-bg-hero bg-stone-900 mx-auto w-[90%]">
+    <header id="nav-bar" class="m-3 mb-0  pb-20 nav bg-cover bg-bg-hero rounded-t-md mx-auto w-[90%] relative">
         <!-- Navigation & Logo Bar -->
-        <div class="flex flex-row">
+        <div class="flex flex-row items-center justify-between">
             <!-- logo image -->
-            <div class="w-20 p-1 ml-5">
+            <div class="w-[6%] ml-10 mt-5 my-auto">
                 <a href="#">
                     <img src="./img/Wlogo.jpg" alt="" class="w-3/4 rounded-md">
                 </a>
             </div>
-            <nav class="flex flex-row justify-end items-center spacing-12 mx-auto w-[100%]">
-                <a href="#"
-                    class="text-1xl font-semibold text-white hover:text-theme-yellow space-y-8 m-3">Collection</a>
-                <a href="#" class="text-1xl font-semibold text-white hover:text-theme-yellow space-y-8 m-3">Market
+            <nav class="flex justify-end items-center space-x-10 w-[60%]">
+                <a href="#" class="font-semibold text-white hover:text-theme-yellow tracking-[3px]">Collection</a>
+                <a href="#" class="font-semibold text-white hover:text-theme-yellow tracking-[3px]">Market
                     Place</a>
-                <a href="#" class="text- font-semibold text-white hover:text-theme-yellow space-y-8 m-3">Community</a>
-
-                <button
-                    class="ml-6 mr-3 rounded-lg border bg-gradient-btn text-white font-mono py-2  px-3 shadow-md hover:border-blue-50">
-                    Connect Wallet
-                </button>
+                <a href="#" class="font-semibold text-white hover:text-theme-yellow tracking-[3px]">Community</a>
             </nav>
+            <button
+                class="ml-20 mr-5 rounded-lg border bg-gradient-btn text-white font-mono py-2  px-3 shadow-md hover:border-theme-yellow hover:text-theme-yellow">
+                Connect Wallet
+            </button>
         </div>
 
         <!-- Hero section -->
-        <section class="m-3 nav flex justify-start flex-col space-y-5 p-2 im w-[50%]">
+        <section class="ml-20 nav flex justify-start flex-col space-y-7 p-6 w-[50%]">
 
-            <h1 class="text-6xl font-semibold text-white w-[60%]">
-                Discover Digital Art and Collect NFTs.
+            <h1 class="text-6xl font-extrabold text-white w-[60%]">
+                Discover <span class="text-theme-yellow font-black">Digital</span> Art and Collect <span
+                    class="text-theme-yellow font-black">NFTs.</span>
             </h1>
-            <p class="text-white text-1xl font-sans font-medium w-[70%]">
+            <p class="text-white text-1xl font-sans tracking-wide w-[70%]">
                 Nero is a shared liquidity NFT market smart contract which is used by multiple website to provide the
                 users
                 the best possible experience.
             </p>
 
-            <button
-                class="rounded-lg border bg-gradient-btn text-white font-mono py-2  px-2 shadow-md hover:border-blue-50 w-[50%]">
-                Get Started
-            </button>
+            <div class="flex items-center w-[100%]">
+                <button
+                    class="rounded-lg border bg-gradient-btn text-white font-mono py-2  px-5 shadow-md hover:border-theme-yellow hover:text-theme-yellow w-[1/4]">
+                    Get Started
+                </button>
 
-            <a href="#|">Learn more --- ></a>
+                <a href="#" class="text-theme-yellow ml-10 hover:text-white">Learn more
+                </a>
+            </div>
         </section>
     </header>
 
+    <!-- the stats section -->
+    <section class="bg-bg-body  bg-cover w-[90%] mx-auto">
+        <!-- The glass morph stats -->
+        <div
+            class="w-[60%]  top-[80%]  absolute left-[20%] bg-gray-700 backdrop-filter  backdrop-blur-sm bg-opacity-50 bg-clip-padding flex items-center items-baseline space-x-20 rounded-md shadow-md ring-black">
+            <!-- The left side stat -->
+            <div class="flex justify-between my-4 mx-4">
+                <div class="flex flex-col p-3 items-center">
+                    <h1 class="text-white text-2xl font-semibold">
+                        Artwork
+                    </h1>
+                    <p class="font-extrabold text-theme-yellow text-5xl tracking-tighter mt-2">
+                        27K+
+                    </p>
+                </div>
+                <div class="flex flex-col p-3 items-center">
+                    <h1 class="text-white text-2xl font-semibold">
+                        Auction
+                    </h1>
+                    <p class="font-extrabold text-theme-yellow text-5xl tracking-tighter mt-2">
+                        25K+
+                    </p>
+                </div>
+                <div class="flex flex-col p-3 items-center">
+                    <h1 class="text-white text-2xl font-semibold">
+                        Artist
+                    </h1>
+                    <p class="font-extrabold text-theme-yellow text-5xl tracking-tighter mt-2">
+                        12.5K+
+                    </p>
+                </div>
+            </div>
 
+            <!-- The side image -->
+            <div class="flex flex-col items-start mx-0 my-4">
+                <div class="flex space-x-3 p-3 justify-center items-baseline">
+                    <h1 class="text-white text-1xl font-semibold">
+                        Art
+                    </h1>
+                    <p class="font-extrabold text-theme-yellow text-3xl tracking-tighter mt-2">
+                        3.4 ETH
+                    </p>
+                </div>
+                <div>
+                    <img src="./img/webedit1.png" alt="" class="w-2/3">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- the main section -->
+    <main id="main" class="mb-0  pb-20 -z-50 nav bg-cover bg-bg-body mx-auto w-[90%] relative flex relative">
+        <!-- this is the main side image section -->
+        <section class="grid grid-cols-2 grid-flow-row gap-4 mx-[15%] my-[10%]">
+            <div class="bg-white w-[300px] h-[200px] rounded-lg">
+                <img src="./img/W1.png" alt="" class="">
+            </div>
+            <div class="bg-white w-20 h-15">
+                <p>I no know anything lol</p>
+            </div>
+            <div class="bg-white w-20 h-15">
+                <p>I no know anything lol</p>
+            </div>
+            <div class="bg-white w-20 h-15">
+                <p>I no know anything lol</p>
+            </div>
+        </section>
+
+        <!-- The main section right text section-->
+        <section>
+
+        </section>
+    </main>
 </body>
 
 </html>
